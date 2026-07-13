@@ -49,13 +49,7 @@ pavani-portfolio/
 ├── src/
 │   ├── assets/             # Images, project screenshots, logos
 │   │   ├── certificates/   # Uploaded certificate images
-│   │   │   ├── Nlite.jpeg
-│   │   │   ├── VaultOfCodes.jpeg
-│   │   │   ├── eduskills.png
-│   │   │   ├── modernAi.png
-│   │   │   ├── pupilFirst.png
-│   │   │   ├── python1.png
-│   │   │   └── python2.png
+│   │   │   
 │   │   ├── Profile.jpeg    # Profile picture
 │   │   └── react.svg
 │   ├── components/         # Reusable React components
