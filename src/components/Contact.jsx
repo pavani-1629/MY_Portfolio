@@ -21,17 +21,39 @@ export default function Contact() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setSubmitting(true);
-    
-    // Simulate API request
-    setTimeout(() => {
+
+    const formDataToSend = new FormData();
+    formDataToSend.append("access_key", "6b0100f0-bf7b-41f4-ab88-44063e76643e");
+    formDataToSend.append("name", formData.name);
+    formDataToSend.append("email", formData.email);
+    formDataToSend.append("subject", formData.subject);
+    formDataToSend.append("message", formData.message);
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formDataToSend
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setSubmitted(true);
+        setFormData({ name: '', email: '', subject: '', message: '' });
+        setTimeout(() => setSubmitted(false), 5000); // clear message after 5 seconds
+      } else {
+        console.error("Error from Web3Forms:", data);
+        alert("Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      console.error("Submit Error:", error);
+      alert("Something went wrong. Please check your network connection and try again.");
+    } finally {
       setSubmitting(false);
-      setSubmitted(true);
-      setFormData({ name: '', email: '', subject: '', message: '' });
-      setTimeout(() => setSubmitted(false), 5000); // clear message after 5 seconds
-    }, 1500);
+    }
   };
 
   const contactOptions = [
