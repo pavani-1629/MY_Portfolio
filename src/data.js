@@ -1,3 +1,11 @@
+import nliteImg from './assets/certificates/Nlite.jpeg';
+import eduskillsImg from './assets/certificates/eduskills.png';
+import modernAiImg from './assets/certificates/modernAi.png';
+import pupilFirstImg from './assets/certificates/pupilFirst.png';
+import python1Img from './assets/certificates/python1.png';
+import python2Img from './assets/certificates/python2.png';
+import VaultOfCodesImg from './assets/certificates/VaultOfCodes.jpeg';
+
 export const personalInfo = {
   name: "Pavani Parla",
   title: "Software Engineer & AI Enthusiast",
@@ -163,27 +171,37 @@ export const certifications = [
   {
     title: "Python with Django",
     issuer: "Nlite Asia",
-    image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80"
+    image: nliteImg
   },
   {
     title: "Java Full Stack Developer",
     issuer: "Eduskills (APSCHE)",
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80"
+    image: eduskillsImg
   },
   {
-    title: "Python Essentials 1 & 2",
+    title: "Python Essentials 1",
     issuer: "Cisco Networking Academy",
-    image: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=600&q=80"
+    image: python1Img
+  },
+  {
+    title: "Python Essentials 2",
+    issuer: "Cisco Networking Academy",
+    image: python2Img
   },
   {
     title: "Introduction to Modern AI",
     issuer: "Cisco Networking Academy",
-    image: "https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=600&q=80"
+    image: modernAiImg
   },
   {
     title: "JavaScript Essentials",
     issuer: "PupilFirst",
-    image: "https://images.unsplash.com/photo-1579468118864-1b9ea3c0db4a?auto=format&fit=crop&w=600&q=80"
+    image: pupilFirstImg
+  },
+  {
+    title: "Web Development",
+    issuer: "Vault of Codes",
+    image: VaultOfCodesImg
   }
 ];
 

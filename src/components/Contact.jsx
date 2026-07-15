@@ -114,7 +114,7 @@ export default function Contact() {
 
             {/* Quick reminder text */}
             <div className="text-xs text-slate-500 font-mono">
-              Designed with &hearts; inside the workspace.
+             {/*Designed with &hearts; inside the workspace.*/}
             </div>
           </div>
 

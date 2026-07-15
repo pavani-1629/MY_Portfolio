@@ -80,7 +80,7 @@ export default function Footer() {
               &copy; {currentYear} {personalInfo.name}. All rights reserved.
             </p>
             <p className="text-[10px] text-slate-600 font-mono">
-              Designed &amp; built with <span className="text-violet-500">React</span> &amp; <span className="text-cyan-500">Tailwind CSS</span>.
+                {/*Designed &amp; built with <span className="text-violet-500">React</span> &amp; <span className="text-cyan-500">Tailwind CSS</span>.*/}
             </p>
           </div>
 

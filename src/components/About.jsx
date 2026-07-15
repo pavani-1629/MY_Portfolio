@@ -81,10 +81,14 @@ export default function About() {
               Aspiring Software Engineer focused on real-world impact
             </h3>
             <p className="text-slate-400 leading-relaxed text-lg">
-              {personalInfo.objective}
+              {/*{personalInfo.objective} */}
             </p>
             <p className="text-slate-400 leading-relaxed">
-              I am a Computer Science student with a specialization in Artificial Intelligence. My experience spans full-stack development with Django and Flask, frontend architectures using React, and hardware-software interfacing using Arduino microcontrollers. I enjoy solving complex algorithmic puzzles and building intelligent systems that integrate Generative AI.
+              I am a Computer Science student with a specialization in Artificial Intelligence , 
+              passionate about AI, full-stack development, and software engineering. 
+              I enjoy designing intelligent applications, solving Data Structures & Algorithms problems,
+               and building scalable web solutions using Java, Python, React, Django, Flask, and Machine Learning. 
+               I'm always eager to learn emerging technologies and transform innovative ideas into real-world products.
             </p>
           </motion.div>
 

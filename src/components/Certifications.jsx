@@ -51,43 +51,43 @@ export default function Certifications() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5"
           >
             {certifications.map((cert, idx) => (
               <motion.div
                 key={idx}
                 variants={itemVariants}
-                className="glass-card rounded-2xl overflow-hidden border border-slate-800/85 hover:border-violet-500/30 hover:shadow-violet-500/5 hover:shadow-xl transition-all duration-300 group flex flex-col justify-between"
+                className="glass-card rounded-xl overflow-hidden border border-slate-800/85 hover:border-violet-500/30 hover:shadow-violet-500/5 hover:shadow-md transition-all duration-300 group flex flex-col justify-between"
               >
                 {/* Certificate Image Header */}
-                <div className="h-44 overflow-hidden relative">
+                <div className="h-24 overflow-hidden relative">
                   <img 
                     src={cert.image} 
                     alt={cert.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 ease-out"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
-                  <div className="absolute bottom-3 left-4 flex items-center space-x-2">
-                    <span className="px-2.5 py-0.5 rounded text-[10px] font-bold bg-violet-600/90 text-white flex items-center">
-                      <Award className="w-3 h-3 mr-1" />
+                  <div className="absolute bottom-2 left-3 flex items-center space-x-2">
+                    <span className="px-2 py-0.5 rounded text-[8px] font-bold bg-violet-600/90 text-white flex items-center">
+                      <Award className="w-2 h-2 mr-1" />
                       VERIFIED
                     </span>
                   </div>
                 </div>
 
                 {/* Certificate Info */}
-                <div className="p-6 flex-1 flex flex-col justify-between space-y-4">
+                <div className="p-3 flex-1 flex flex-col justify-between space-y-2">
                   <div>
-                    <h4 className="text-lg font-bold text-white leading-snug group-hover:text-violet-400 transition-colors">
+                    <h4 className="text-sm font-bold text-white leading-snug group-hover:text-violet-400 transition-colors">
                       {cert.title}
                     </h4>
-                    <p className="text-sm text-slate-400 font-medium mt-1.5">
+                    <p className="text-[11px] text-slate-400 font-medium mt-0.5">
                       Issued by: <span className="text-slate-300 font-semibold">{cert.issuer}</span>
                     </p>
                   </div>
-                  <div className="pt-4 border-t border-slate-900 flex items-center justify-between">
-                    <span className="text-xs text-slate-500 font-mono">Credential ID: Verified</span>
-                    <span className="text-sm font-semibold text-violet-400 hover:text-cyan-400 transition-colors cursor-pointer">View PDF</span>
+                  <div className="pt-2 border-t border-slate-900 flex items-center justify-between">
+                    <span className="text-[9px] text-slate-500 font-mono">Credential ID: Verified</span>
+                    <span className="text-xs font-semibold text-violet-400 hover:text-cyan-400 transition-colors cursor-pointer">View PDF</span>
                   </div>
                 </div>
               </motion.div>

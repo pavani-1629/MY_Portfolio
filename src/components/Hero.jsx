@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Code } from 'lucide-react';
 import { Github, Linkedin } from './Icons';
 import { personalInfo } from '../data';
+import profileImg from '../assets/Profile.jpeg';
 
 export default function Hero() {
   const [taglineIndex, setTaglineIndex] = useState(0);
@@ -13,8 +14,6 @@ export default function Hero() {
   const taglines = [
     "Full Stack Developer"
   ];
-
-  const profileImg = '/avatar.jpg'; // Path to place your profile picture (e.g. public/avatar.jpg)
 
   useEffect(() => {
     let timer;
