@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Terminal } from 'lucide-react';
 import { resumes } from '../data';
+import logoImg from '../assets/meeee.png';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,8 +37,12 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <a href="#" className="flex items-center space-x-2 group">
-            <Terminal className="w-6 h-6 text-violet-500 group-hover:text-cyan-400 transition-colors" />
+          <a href="#" className="flex items-center space-x-2.5 group">
+            <img 
+              src={logoImg} 
+              alt="Pavani Parla" 
+              className="w-8 h-8 rounded-full object-cover border border-violet-500/30 shadow-md group-hover:border-cyan-400/50 transition-colors duration-300"
+            />
             <span className="text-xl font-bold tracking-wider bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent group-hover:from-cyan-400 group-hover:to-violet-400 transition-all duration-300">
               Pavani Parla
             </span>
