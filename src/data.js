@@ -221,5 +221,5 @@ export const leadership = [
 ];
 
 export const resumes = {
-  url: "#", // Replace with your resume link
+  url: "https://drive.google.com/file/d/1WuhOn1RiFjn4oig318fx1eMqgQ2-dKeS/view?usp=sharing",
 };
